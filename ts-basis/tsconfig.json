@@ -1,6 +1,14 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "outDir": "out"
+    "outDir": "out",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "types/*"
+      ]
+    }
   }
 }
