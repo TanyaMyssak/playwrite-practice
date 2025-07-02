@@ -33,73 +33,27 @@ export default class GaragePage extends BasePage {
         await expect(this.pageHeader).toBeVisible();
     }
 
-        /* async deleteAllCars(): Promise<void> {
-        console.log('=== Starting deleteAllCars debug ===');
-        
-        const editIcons = this.page.locator('.car_edit');
-        let initialCount = await editIcons.count();
-        console.log(`Initial car count: ${initialCount}`);
-        
-        if (initialCount === 0) {
-            console.log('No cars to delete');
-            return;
-        }
-        
-        let attempts = 0;
-        const maxAttempts = 10;
-        
-        while (await editIcons.count() > 0 && attempts < maxAttempts) {
-            attempts++;
-            const currentCount = await editIcons.count();
-            console.log(`\n--- Attempt ${attempts} ---`);
-            console.log(`Cars remaining: ${currentCount}`);
-            
-            try {
-                // Click edit icon
-                console.log('Clicking edit icon...');
-                await editIcons.first().click();
-                await this.page.waitForTimeout(500);
-                
-                // Click "Remove car" button
-                console.log('Looking for "Remove car" button...');
-                const removeCarButton = this.page.getByRole('button', { name: 'Remove car' });
-                await removeCarButton.waitFor({ state: 'visible', timeout: 5000 });
-                console.log('Found "Remove car" button, clicking...');
-                await removeCarButton.click();
-                await this.page.waitForTimeout(500);
-                
-                // Click "Remove" confirmation button
-                console.log('Looking for "Remove" confirmation button...');
-                const removeButton = this.page.getByRole('button', { name: 'Remove' });
-                await removeButton.waitFor({ state: 'visible', timeout: 5000 });
-                console.log('Found "Remove" button, clicking...');
-                await removeButton.click();
-                
-                // Wait for deletion
-                console.log('Waiting for deletion to complete...');
-                await this.page.waitForTimeout(2000);
-                
-                const newCount = await editIcons.count();
-                console.log(`Cars after deletion: ${newCount}`);
-                
-                if (newCount === currentCount) {
-                    console.log('⚠️  Car count did not decrease - deletion may have failed');
-                    break;
-                }
-                
-            } catch (error) {
-                console.error(`Error in attempt ${attempts}:`, error);
-                break;
-            }
-        }
-        
-        const finalCount = await editIcons.count();
-        console.log(`\n=== Final result ===`);
-        console.log(`Started with: ${initialCount} cars`);
-        console.log(`Ended with: ${finalCount} cars`);
-        console.log(`Total attempts: ${attempts}`);
-    } */
+   async deleteAllCars(): Promise<void> {
+  while (true) {
+    // Re-fetch all edit icons on the page (one per car)
+    const editIcons = await this.page.locator('span.icon.icon-edit').elementHandles();
+
+    if (editIcons.length === 0) {
+      // No more cars to delete
+      break;
+    }
+
+    // Click the first edit icon (to remove cars one by one)
+    await editIcons[0].click();
+
+    // Click "Remove car" button
+    await this.page.click('button.btn.btn-outline-danger:has-text("Remove car")');
+
+    // Click "Remove" confirmation button
+    await this.page.click('button.btn.btn-danger:has-text("Remove")');
+
+    // Wait a little for UI to update after deletion
+    await this.page.waitForTimeout(500);
+  }
 }
-
-
-
+}

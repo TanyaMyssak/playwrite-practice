@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "YSC",
-      "value": "FBXc_lY0wPk",
+      "value": "ARdlnWWnv3Y",
       "domain": ".youtube.com",
       "path": "/",
       "expires": -1,
@@ -12,40 +12,40 @@
     },
     {
       "name": "VISITOR_INFO1_LIVE",
-      "value": "rCiuKLzu5sc",
+      "value": "4mdLXxISjPk",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1767011255.972449,
+      "expires": 1767016565.886699,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJTRRIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiAv",
+      "value": "CgJTRRIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiBT",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1767011255.972595,
+      "expires": 1767016565.886776,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "CI7G9NCBnPDoIhCFjaOWlp6OAxiFjaOWlp6OAw%3D%3D",
+      "value": "CNXH49b7xJvIygEQpqmg-qmejgMYpqmg-qmejgM%3D",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1767011255.972624,
+      "expires": 1767016565.886802,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "sid",
-      "value": "s%3AFTNn3MG28arp1BG5tr_m5vhHIrzj2aIZ.pBu5Bp8T4cEaliJNZvOjtPv0OLXjpv0aEYCkDGknxPY",
+      "value": "s%3APBzN9yhG4CbaJmlkoD8qzFB1jEJKu-9p.EJQ0fHA0YGFo8mz7foUaTYSoiBQtmepqtv50pkJnVfs",
       "domain": ".forstudy.space",
       "path": "/",
-      "expires": 1751545658.095525,
+      "expires": 1751550968.031971,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -57,7 +57,7 @@
       "localStorage": [
         {
           "name": "ytidb::LAST_RESULT_ENTRY_KEY",
-          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1754051256785,\"creation\":1751459256785}"
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1754056566607,\"creation\":1751464566608}"
         }
       ]
     }
