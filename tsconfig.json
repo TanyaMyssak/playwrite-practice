@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "out",
+    "baseUrl": "https://qauto.forstudy.space/", // 👈 This allows absolute imports
+    "paths": {
+      "@pages/*": ["POM/pages/*"],       // 👈 You can now use @pages alias
+      "@forms/*": ["POM/forms/*"]        // 👈 You can now use @forms alias
+    }
+  },
+  "include": ["**/*.ts"]
+}
