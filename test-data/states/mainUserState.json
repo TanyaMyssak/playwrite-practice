@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "YSC",
-      "value": "I108OYRZXIQ",
+      "value": "m-tso4bFZFI",
       "domain": ".youtube.com",
       "path": "/",
       "expires": -1,
@@ -14,10 +14,10 @@
     },
     {
       "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "COy83a35-8mGhQEQ5Pjd7dC8jgMY5Pjd7dC8jgM%3D",
+      "value": "CIXMwajCg9ieygEQit2X6oG_jgMYit2X6oG_jgM%3D",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1768057800.788143,
+      "expires": 1768139666.142377,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None",
@@ -26,10 +26,10 @@
     },
     {
       "name": "VISITOR_INFO1_LIVE",
-      "value": "SR4G6lQbzEg",
+      "value": "rns-bKvjKmM",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1768057800.788243,
+      "expires": 1768139666.142445,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None",
@@ -38,10 +38,10 @@
     },
     {
       "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJTRRIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiAh",
+      "value": "CgJTRRIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiA8",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1768057800.788286,
+      "expires": 1768139666.142468,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None",
@@ -50,10 +50,10 @@
     },
     {
       "name": "sid",
-      "value": "s%3ALggDX9SzsrQCUbT69j7Q6ri406ZWCrPt.45p8T5NBOuFAuzjX5zIARIC9hAok1eBiQtqtUNOvryw",
+      "value": "s%3ApisWCsUA7vCodvU2CK6KMKi6TG__Cham.tf%2BjNmDZs3oB1o7M3g1DIPoHz4qMzhrgKr6hskqakK4",
       "domain": ".forstudy.space",
       "path": "/",
-      "expires": 1752592203.192554,
+      "expires": 1752674068.141373,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -65,7 +65,7 @@
       "localStorage": [
         {
           "name": "ytidb::LAST_RESULT_ENTRY_KEY",
-          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1755097801995,\"creation\":1752505801996}"
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1755179666828,\"creation\":1752587666828}"
         }
       ]
     }
