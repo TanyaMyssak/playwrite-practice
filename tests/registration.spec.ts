@@ -1,15 +1,18 @@
-const { test, expect } = require('@playwright/test');
+import {test, expect} from '@playwright/test';
+
+test.use({
+  
+  httpCredentials: {
+    username: 'guest',
+    password: 'welcome2qauto'
+  }
+});
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('https://qauto.forstudy.space', {
-        httpCredentials: {
-            username: 'guest',
-            password: 'welcome2qauto'
-        }
-    });
+  await page.goto('https://qauto.forstudy.space');
 
-    await page.click('button.hero-descriptor_btn.btn.btn-primary');
-    await expect(page.locator('.modal-content')).toBeVisible();
+  await page.click('button.hero-descriptor_btn.btn.btn-primary');
+  await expect(page.locator('.modal-content')).toBeVisible();
 });
 
 /* First name */

@@ -1,5 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
+
+
 
 /**
  * Read environment variables from file.
@@ -47,10 +50,22 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'Playwright',
+
+         {
+      name: 'setup',
       use: { ...devices['Desktop Chrome'] },
+      testMatch: '*/setup/**.ts'
+
     },
+    {
+      name: 'smoke',
+      use: { ...devices['Desktop Chrome'] },
+      testIgnore: '*/setup/**.ts',
+      dependencies: ['setup']
+
+    },
+
+
 
     // {
     //   name: 'firefox',
