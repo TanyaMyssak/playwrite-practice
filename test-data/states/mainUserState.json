@@ -2,50 +2,58 @@
   "cookies": [
     {
       "name": "YSC",
-      "value": "pX9rykjR4Sc",
+      "value": "I108OYRZXIQ",
       "domain": ".youtube.com",
       "path": "/",
       "expires": -1,
       "httpOnly": true,
       "secure": true,
-      "sameSite": "None"
+      "sameSite": "None",
+      "partitionKey": "https://forstudy.space",
+      "_crHasCrossSiteAncestor": true
     },
     {
       "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "COzkksukwL7S-AEQlaHBkp2jjgMYlaHBkp2jjgM%3D",
+      "value": "COy83a35-8mGhQEQ5Pjd7dC8jgMY5Pjd7dC8jgM%3D",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1767184926.250947,
+      "expires": 1768057800.788143,
       "httpOnly": true,
       "secure": true,
-      "sameSite": "None"
+      "sameSite": "None",
+      "partitionKey": "https://forstudy.space",
+      "_crHasCrossSiteAncestor": true
     },
     {
       "name": "VISITOR_INFO1_LIVE",
-      "value": "4bjp3glEN34",
+      "value": "SR4G6lQbzEg",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1767184926.251009,
+      "expires": 1768057800.788243,
       "httpOnly": true,
       "secure": true,
-      "sameSite": "None"
+      "sameSite": "None",
+      "partitionKey": "https://forstudy.space",
+      "_crHasCrossSiteAncestor": true
     },
     {
       "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJTRRIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiAM",
+      "value": "CgJTRRIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiAh",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1767184926.251033,
+      "expires": 1768057800.788286,
       "httpOnly": true,
       "secure": true,
-      "sameSite": "None"
+      "sameSite": "None",
+      "partitionKey": "https://forstudy.space",
+      "_crHasCrossSiteAncestor": true
     },
     {
       "name": "sid",
-      "value": "s%3AGFES8SjbefzcP9qsvPnPKBzRJ7zbaM6A.VzJzAEKdtfRVyAFpedoHxEuj2WnUL4m9H%2FvmwTC9iOg",
+      "value": "s%3ALggDX9SzsrQCUbT69j7Q6ri406ZWCrPt.45p8T5NBOuFAuzjX5zIARIC9hAok1eBiQtqtUNOvryw",
       "domain": ".forstudy.space",
       "path": "/",
-      "expires": 1751719328.250434,
+      "expires": 1752592203.192554,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -57,7 +65,7 @@
       "localStorage": [
         {
           "name": "ytidb::LAST_RESULT_ENTRY_KEY",
-          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1754224927333,\"creation\":1751632927334}"
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1755097801995,\"creation\":1752505801996}"
         }
       ]
     }

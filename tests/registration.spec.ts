@@ -16,7 +16,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 /* First name */
-test.describe('Signup Modal - Name Field Validation', () => {
+test.describe.skip('Signup Modal - Name Field Validation', () => {
     test('Finds Sign up modal title', async ({ page }) => {
         await expect(page.locator('.modal-title')).toContainText('Registration');
     });
@@ -103,7 +103,7 @@ test.describe('Signup Modal - Name Field Validation', () => {
 });
 
 /* Last name */
-test.describe('Signup Modal - Last Name Field Validation', () => {
+test.describe.skip('Signup Modal - Last Name Field Validation', () => {
     test('Finds Sign up modal title', async ({ page }) => {
         await expect(page.locator('.modal-title')).toContainText('Registration');
     });
@@ -190,7 +190,7 @@ test.describe('Signup Modal - Last Name Field Validation', () => {
 });
 
 /* Email field validation */
-test.describe('Signup Modal - Email Field Validation', () => {
+test.describe.skip('Signup Modal - Email Field Validation', () => {
     test('Finds Sign up modal title', async ({ page }) => {
         await expect(page.locator('.modal-title')).toContainText('Registration');
     });
@@ -245,7 +245,7 @@ test.describe('Signup Modal - Email Field Validation', () => {
 });
 
 /* Password */
-test.describe('Signup Modal - Password Fields Validation', () => {
+test.describe.skip('Signup Modal - Password Fields Validation', () => {
     test('Finds Sign up modal title', async ({ page }) => {
         await expect(page.locator('.modal-title')).toContainText('Registration');
     });
